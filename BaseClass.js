@@ -13,11 +13,11 @@ class BaseClass{
       }
       display(){
         var angle = this.body.angle;
-        push();
+        push(); //saves the seeting to the new position
         translate(this.body.position.x, this.body.position.y);
         rotate(angle);
         imageMode(CENTER);
         image(this.image, 0, 0, this.width, this.height);
-        pop();
+        pop(); //restores the setting the original position
       }
 }

@@ -3,11 +3,12 @@ class SlingShot{
         var options = {
             bodyA: bodyA,
             pointB: pointB,
-            stiffness: 0.04,
+            stiffness: 0.004, 
             length: 10
-        }
+        }  
         this.pointB = pointB
         this.sling = Constraint.create(options);
+        this.sling1 = loadImage();
         World.add(world, this.sling);
     }
 
@@ -22,6 +23,7 @@ class SlingShot{
             strokeWeight(4);
             line(pointA.x, pointA.y, pointB.x, pointB.y);
         }
+        //sno changes
     }
     
 }
