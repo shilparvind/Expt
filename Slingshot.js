@@ -23,7 +23,8 @@ class SlingShot{
             strokeWeight(4);
             line(pointA.x, pointA.y, pointB.x, pointB.y);
         }
-        //sno changes
+        ///let see the chnagess
+        
     }
     
 }
